@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: black;
+  font-weight: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  background-color: white;
+  color: #fff;
+  font-family: "IM Fell English SC", serif;
+}
+
+/*---header---*/
+
+.container-img {
+  margin: 1.5em 0;
+}
+
+.container-img img {
+  display: block;
+  margin: 0 auto;
+  width: 20ex;
+}
+
+.mainBlock {
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+.inputingBlock,
+.adressBlock {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr;
+}
+
+.footnoteBlockInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.bigText,
+.bigForm,
+.airbox,
+.smallForm,
+.smallText {
+  margin: 0.2em;
+}
+
+.bigText {
+  font-weight: bolder;
+}
+
+.descriptionCarTitleInput,
+.descriptionCar,
+.descriptionCarInput,
+.colorCarInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input {
+  max-width: 10em;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.airbox {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: red;
+}

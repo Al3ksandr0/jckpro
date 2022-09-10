@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" section="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>pdf</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-container">
+			<div class="container-img">
+				<picture>
+					<source srcset="..\img\mers.webp" type="image/webp"><img src="..\img\mers.png" alt=" logo">
+				</picture>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="mainBlock">
+
+			<div class="inputBlock">
+				<div class="inputingBlock">
+					<p class="bigText">Auftrag:</p>
+					<input class="bigForm" type="text" placeholder="xxx">
+					<div class="airbox"></div>
+				</div>
+
+				<div class="inputingBlock">
+					<p class="bigText">Bestelleingang:</p>
+					<input class="bigForm" type="date">
+					<div class="airbox"></div>
+				</div>
+
+				<div class="inputingBlock">
+					<p class="bigText">Bestelländerung:</p>
+					<input class="bigForm" type="date">
+					<div class="airbox"></div>
+				</div>
+
+				<div class="inputingBlock">
+					<p class="bigText">Bedarfsnr:</p>
+					<input class="bigForm" type="text" placeholder="10-digit number" onkeypress="return isNumberKey(event)"
+						maxlength="10">
+					<div class="airbox"></div>
+				</div>
+
+				<div class="inputingBlock">
+					<p class="bigText">Ibis:</p>
+					<input class="bigForm" type="text" placeholder="Numbers" onkeypress="return isNumberKey(event)">
+					<div class="airbox"></div>
+				</div>
+			</div>
+
+			<div class="footnoteBlock">
+				<div class="footnoteBlockInfo">
+					<p class="smallText">Berlin,</p>
+					<input class="smallForm" type="date">
+				</div>
+			</div>
+
+			<div class="adressBlockTitle">
+				<p class="bigText">Interne Verkaufsunterlage</p>
+			</div>
+
+			<div class="adressBlock">
+				<div class="adressBlockInput">
+					<p class="bigText">Kunde: </p>
+					<p class="smallText">BwFuhrparkService GmbH</p><br>
+					<p class="smallText">Maarstr. 63<br>53842 Troisdorf</p>
+				</div>
+
+				<div class="contactBlockInput">
+					<p class="bigText">Kontaktperson:</p>
+					<p class="smallText">Herr Michael Eisentraut<br>MBVS: 000003</p>
+				</div>
+			</div>
+
+			<div class="airbox"></div>
+
+			<div class="contactBlock">
+				<p class="bigText">Verkäufer/in:</p>
+				<p class="smallText">Alexander Deitemeier, Telefon +49 0160
+					8623188,<br>E-Mailalexander.deitemeier@mercedes-benz.com</p>
+			</div>
+
+			<div class="airbox"></div>
+
+			<div class="descriptionCarTitle">
+				<div class="descriptionCarTitleInput">
+					<p class="bigText">Fahrzeugbeschreibung für Mercedes Benz</p>
+					<input class="bigText" type="text" placeholder="xxx">
+					<input class="bigText" type="text" placeholder="xxx">
+				</div>
+			</div>
+
+			<div class="descriptionAllCar">
+				<div class="descriptionCar">
+					<div class="descriptionCarInput">
+						<p class="smallText">Modell:</p>
+					</div>
+					<div class="descriptionCarInputA">
+						<p class="smallText">Mercedes Benz
+							<input type="text" / placeholder="xx">
+							<input type="text" placeholder="xxx">
+						</p>
+					</div>
+
+				</div>
+				<div class="descriptionCarInput">
+					<div class="smallText">
+						<p>Fahrzeugtyp:</p>
+					</div>
+					<div class="bigForm">
+						<input type="text" placeholder="xx">
+					</div>
+				</div>
+				<div class="descriptionCarInput">
+					<div class="smallText">
+						<p>Baumuster:</p>
+					</div>
+					<div class="bigForm">
+						<input type="text" placeholder="Baumuster">
+					</div>
+				</div>
+			</div>
+
+			<div class="colorCarTitle">
+				<p class="bigText">Lackierung:</p>
+			</div>
+
+			<div class="colorCar">
+				<div class="colorCarInput">
+					<p class="bigText">MB</p>
+					<input class="bigText" type="text" placeholder="xxxx">
+					<input class="bigText" type="text" placeholder="description">
+				</div>
+				<div class="colorCarInpu">
+					<input class="bigText" type="text" placeholder="Preis in -,-- ">
+				</div>
+			</div>
+
+			<div class="settingsCarTitle">
+				<p class="bigText">Fahrzeugausstattung:</p>
+			</div>
+
+			<div class="settingsCar">
+				<div class="inputingBlock">
+					<input class="bigForm" type="text" placeholder="MBAG Code">
+					<input class="bigForm" type="text" placeholder="Beschreibung">
+					<div class="airbox"></div>
+				</div>
+				<input class="bigForm" type="text" placeholder="Preis in -,-- ">
+				<div class="inputingBlock">
+					<input class="bigForm" type="text" placeholder="MBAG Code">
+					<input class="bigForm" type="text" placeholder="Beschreibung">
+					<div class="airbox"></div>
+				</div>
+				<input class="bigForm" type="text" placeholder="Preis in -,-- ">
+				<div class="inputingBlock">
+					<input class="bigForm" type="text" placeholder="MBAG Code">
+					<input class="bigForm" type="text" placeholder="Beschreibung">
+					<div class="airbox"></div>
+				</div>
+				<input class="bigForm" type="text" placeholder="Preis in -,-- ">
+			</div>
+
+			<div class="MoreSettingsCarTitle">
+				<p class="bigText">Weitere Sachverhalte:</p>
+			</div>
+
+			<div class="MoreSettingsCar">
+				<div class="inputingBlock">
+					<input class="bigForm" type="text" placeholder="Code">
+					<input class="bigForm" type="text" placeholder="Beschreibung">
+					<div class="airbox"></div>
+				</div>
+				<input class="bigForm" type="text" placeholder="Preis in -,-- ">
+				<div class="inputingBlock">
+					<input class="bigForm" type="text" placeholder="Code">
+					<input class="bigForm" type="text" placeholder="Beschreibung">
+					<div class="airbox"></div>
+				</div>
+				<input class="bigForm" type="text" placeholder="Preis in -,-- ">
+				<div class="inputingBlock">
+					<input class="bigForm" type="text" placeholder="Code">
+					<input class="bigForm" type="text" placeholder="Beschreibung">
+					<div class="airbox"></div>
+				</div>
+				<input class="bigForm" type="text" placeholder="Preis in -,-- ">
+			</div>
+
+			<div class="contactBlock">
+				<p class="smallText">Pr. iVm.: Preis in Verbindung mit <br>
+					Rpr. Anf.: Richtpreis auf Anfrage
+				</p>
+			</div>
+
+	</main>
+	<script>
+		function isNumberKey(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode
+			if (charCode > 31 && (charCode < 48 || charCode > 57)) return false;
+			return true;
+		};
+	</script>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>
